@@ -1,0 +1,869 @@
+body {
+    background-color: rgb(241, 238, 233);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column; 
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+article {
+    background-color: rgba(255, 255, 255, 0.904);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column; 
+    align-items: center;
+    width: 100%;
+}
+
+
+#promo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 4%;
+    background-color: rgb(4, 165, 4);
+    z-index: 50;
+    align-items: center;
+    justify-content: center; 
+}
+
+#promo p {
+    color: white;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: small;
+    font-weight: bold;
+    line-height: 0.5;
+}
+
+
+#presentazione {
+    display:flex;
+    padding-top: 5vh;
+    height: 16vh;
+    width:100%;
+    background-color: black;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+}
+
+#contenitore {
+    display:flex;
+    width: 80%;
+    height: 11vh;
+    background-color: black;
+    position:relative;
+    align-items: center;
+    justify-content: center; 
+    z-index: 49;
+}
+
+
+#contenitore img {
+    position:relative;
+    height: 15vh;
+    width: auto;
+}
+
+#ricerca {
+    display: flex;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    margin-left: 1%;
+    width: 50%;
+    height: 45%;  
+}
+
+#cerca {
+    border-radius: 5px;
+    color:#ffffff;
+    font-weight: bold;
+    background-color: rgb(87, 122, 218);
+    margin-left: 1%;
+    border: none;
+    width: 4%;
+    height: 45%;
+    position: relative;
+     cursor: pointer;
+}
+
+#Profilo {
+  background: transparent;
+    border: none;
+    position: relative;
+    border-radius: 50%;
+    width: 4%;
+    height: 55%; 
+    background-size: cover;
+    background-image: url('utente.jpg');
+    background-repeat: no-repeat;
+    margin-left: 1%;
+     cursor: pointer;
+}
+
+#Accesso a {
+    color: rgb(255, 255, 255);
+    position: relative;
+    font-family: "Oswald", sans-serif;
+    font-size: small;
+    font-weight: bold;
+    left: 1.2%;
+    cursor: pointer;
+}
+
+
+#Carrello {
+    background: transparent;
+    border: none;
+    position: relative;
+     width: 4%;
+    height: 55%; 
+    border-radius: 50%;
+    background-size: cover;
+    background-image: url('carrello.jpg');
+    background-repeat: no-repeat;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  width: 90%;  
+   cursor: pointer;
+}
+
+nav li {
+margin: 0 0.2%;
+  flex: 0 0 auto;
+  background-color: #2c2c2c;
+  border-radius: 0.5vh;
+  text-align: center;
+  padding: 1.2vh 2vw;
+  transition: background-color 0.3s ease;
+}
+
+nav li:hover {
+   background-color: #444;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6vh;
+  font-family: "Oswald", sans-serif;
+    font-size: small;
+    font-weight: bold;
+}
+
+#categoria {
+    width: 15%;
+    text-align: left;
+    position: relative;
+}
+
+#categoria img {
+    float: left;
+    width: 9%;
+    height: auto;
+    padding:0;
+    padding-top: 1%;
+    margin:0;
+    margin-right: 2%;    
+}
+
+
+#tendina {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  z-index: 100;
+}
+
+#tendina li {
+  display: block;
+  width:85%;
+   border-radius: 0%;
+}
+
+#tendina li a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: small;
+  font-weight: bold;
+}
+
+#tendina li a:hover {
+text-decoration: underline;
+}
+
+#categoria:hover #tendina {
+  display: block;
+}
+
+#plus {
+    background-color: rgb(101, 41, 179);
+}
+
+#plus:hover {
+    background-color: rgb(114, 67, 176);
+}
+
+.alternative{
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: fixed;
+  height: 40vh;
+  width: 100%;
+}
+
+.alternative .prom1{
+margin-top: 25vh;
+margin-left: 10%;
+}
+
+
+#novita {
+    display: flex;
+    padding-top:1%;
+    padding-bottom: 1%;
+background: 
+  linear-gradient(to right, 
+    rgba(206, 148, 238, 0) 0%,
+    rgba(206, 148, 238, 1) 30%,
+    rgba(199, 226, 102, 1) 70%, 
+    rgba(199, 226, 102, 0) 100% 
+  );
+    width:100%;
+    height: 10%;
+    justify-items: center;
+     justify-content: center;
+    align-items: center;
+}
+
+#novita img:hover {
+    transform: scale(1.05);
+}
+
+#copertina1 {
+height: 17%;
+width: 17%;
+position: relative;
+ cursor: pointer;
+}
+
+#copertina2 {
+margin-left: 2%;
+margin-right: 2%;
+height: 80%;
+width: 32%;
+position: relative;
+ cursor: pointer;
+}
+
+#copertina3 {
+height: 17%;
+width: 16.5%;
+position: relative;
+ cursor: pointer;
+}
+
+#Gratis {
+    display: flex;
+    margin-top: 3%;
+    width: 65%;
+    height: 12vh;
+    flex: 0 0 auto;
+      border-radius: 2vh;
+       padding: 1.2vh 2vw;
+         flex-direction: row;
+         align-items: center; 
+         background: linear-gradient(to bottom,rgb(101, 41, 179), rgb(88, 108, 234));
+
+
+}
+
+#ggratis {
+     position:relative;
+    height: 13vh;
+    width: auto;  
+}
+
+.giveaway {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.giveaway img {
+  flex-shrink: 0;
+}
+
+#testo {
+        display: flex;
+        flex-direction: column; 
+         margin-left: 4vh;
+}
+
+#ttl {
+    margin-top: 0;
+font-size:3vh;
+    font-weight:bold;
+	color:white;
+	line-height:center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+#des {
+       margin-top: 0;
+font-size:1.8vh;
+    font-weight:500;
+	color:white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
+}
+
+#button1 {
+    display: flex;
+    flex: 0 0 auto;
+    width: 15%;
+    height: 7vh;
+    background-color: rgb(83, 129, 255);
+   color: white;
+   border-color: transparent;
+   border-radius: 1vh;
+ padding: 1.5vh 1.5vw;
+ font-weight: bold;
+ font-size:95%;
+ margin-left: auto;
+ float: right;
+ justify-content: center; /* centra orizzontalmente */
+  align-items: center;     /* centra verticalmente */
+  cursor: pointer;
+
+}
+
+#button1:hover{
+  background-color: rgb(41, 97, 252);
+}
+
+
+.prom {
+display: flex;
+flex-direction: column;
+width: 77%;
+height: auto;
+background-color: transparent;
+margin-top: 3%;
+margin-bottom: 3vh;
+}
+
+#special{
+  justify-content: center;
+  align-items: center;     
+  margin-top: 0%;
+  height: 70vh;
+  background: transparent;
+  margin: 0 auto;
+}
+
+.prom p {
+	font-size:20px;
+    font-weight:bold;
+	color:rgb(0, 0, 0);
+	text-align:center;
+	line-height:top;
+	margin-top:0px;
+  justify-content: center;
+}
+
+.nascosto {
+  display: none;
+    background-color: rgb(83, 129, 255);
+   color: white;
+   border-color: transparent;
+}
+
+.codice {
+  background-color: rgb(83, 129, 255);
+   color: white;
+   border-color: transparent;
+}
+
+#corpo {
+    margin-left: 22%;
+    width: 1051px;
+    margin-top: 5%;
+    position: relative;
+    z-index: 1;
+}
+
+/* Contenitore principale */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 5%;
+}
+
+.prom1{
+  display: flex;
+  flex-direction: row;
+}
+
+.prom2{
+  display: flex;
+  flex-direction: column;
+  width: 73%;
+}
+
+.prom3{
+   display: flex;
+  justify-content: right;
+  width: 22%;
+}
+
+.titolo{
+  margin-top: -1%;
+  padding-left: 9vh;
+    font-weight:bold;
+	text-align:left;
+	line-height:top;
+  font-size:3.5vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+#titolo2{
+  font-weight:bold;
+	text-align:left;
+	line-height:top;
+  font-size:3.5vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #ffffff;
+  
+}
+
+#spprom{
+   width:100%;
+}
+
+.info{
+   display: flex;
+    flex: 0 0 auto;
+    width: 44%;
+    height: 2.5vh;
+    background-color: rgb(83, 129, 255);
+   color: white;
+   border-color: transparent;
+   border-radius: 0.5vh;
+ padding: 1.5vh 1.5vw;
+ font-weight: bold;
+ font-size:70%;
+ justify-content: center; 
+  align-items: center;     
+  cursor: pointer;
+}
+
+.info:hover{
+  background-color: rgb(41, 97, 252);
+}
+
+
+.sottotitolo {
+    margin-top: -1%;
+    margin-bottom: 3%;
+     padding-left: 9vh;
+font-size:1.8vh;
+    font-weight:bold;
+	color:rgb(105, 104, 104);
+	line-height:top;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+/* Ogni gioco */
+.game-card {
+  width: calc(22.2222% - 20px);
+  background: white;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
+  display:flex;
+  flex-direction: column;
+}
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+.game-card2 {
+  display: flex;
+  width: calc(33.3333% - 20px);
+  background: white;
+  box-sizing: border-box;
+  text-align:right;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
+  flex-direction: row;
+  margin-bottom: -20px;
+  margin-left: -15px;
+}
+.game-card2:hover {
+    transform: scale(1.05);
+}
+/* Immagine di sfondo */
+.box {
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 2%;
+   box-sizing: border-box;
+}
+
+.box2 {
+ height: 25vh;
+ width: 18vh;
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  border-radius: 2%;
+   box-sizing: border-box;
+}
+
+/* Testi */
+.game-card p {
+  margin: 5px 0;
+  font-size: medium;
+  font-family: "Oswald", sans-serif;
+    font-weight: bold;
+      text-align: left;
+}
+
+.descr{
+font-size: small !important;
+color: #444 !important;
+}
+
+.prezzo{
+font-size: x-large !important;
+}
+
+
+.add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.addimg{
+  background:transparent;
+  background-image: url('add.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border:none;
+  width:3vh;
+  height: 3vh;
+  cursor:pointer;
+}
+
+.incolonna{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 2%;
+  justify-content: space-between;
+}
+
+.gm{
+  justify-content: baseline;
+}
+
+.game-card2 p {
+  margin: 5px 0;
+  font-size: 1.6vh;
+  font-family: "Oswald", sans-serif;
+    font-size: small;
+    font-weight: bold;
+      text-align: left;
+}
+
+.descr2{
+font-size: small !important;
+color: #444 !important;
+}
+
+.prezzo2{
+font-size: x-large !important;
+}
+
+.add2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.addimg2{
+  background:transparent;
+  background-image: url('add.png');
+  background-repeat: none;
+  background-size: cover;
+  border:none;
+  width: 10%;
+  height: 3vh;
+  cursor:pointer;
+}
+
+#sez3 {
+  background-image: url('immagini/promimage.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 70vh;
+  width: 100%;
+margin-bottom: 5%;
+}
+
+.footer {
+  background-color: #222;
+  color: #eee;
+  padding: 3% 2% 2%;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1 1 25%;
+  margin: 2%;
+}
+
+.footer-section h3 {
+    margin-top: -5%;
+  margin-bottom: 2%;
+  color: #fff;
+}
+
+.footer-section ul {
+  
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 1.5%;
+}
+
+.footer-section a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2%;
+  border-top: 1px solid #444;
+  font-size: 80%;
+  color: #aaa;
+}
+
+@media (max-width: 480px) {
+  body, article {
+    min-height: auto;
+    height: auto;
+  }
+
+  #promo {
+    height: 6vh;
+    font-size: 0.75rem;
+  }
+
+  #promo p {
+    line-height: 1;
+    padding: 0 5px;
+  }
+
+  #presentazione, #contenitore {
+    height: auto;
+    padding-top: 3vh;
+    width: 100%;
+    justify-content: center;
+  }
+
+  #contenitore img {
+    height: 10vh;
+  }
+
+  #ricerca {
+    width: 55%;
+    height: 40%;
+    margin-left: 0.5%;
+  }
+
+  #cerca, #Profilo, #Carrello {
+    width: 8%;
+    height: 40%;
+    margin-left: 0.5%;
+  }
+
+  #Accesso {
+    font-size: 0.75rem;
+    left: 1%;
+  }
+
+  nav ul {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav li {
+    margin: 0.3vh 0.5vw;
+    padding: 1vh 1vw;
+    font-size: 0.75rem;
+  }
+
+  #categoria {
+    width: 30%;
+  }
+
+  #categoria img {
+    width: 15%;
+    padding-top: 2%;
+    margin-right: 3%;
+  }
+
+  #tendina {
+    width: 100%;
+    position: static;
+  }
+
+  #novita {
+    height: auto;
+    padding: 1% 0;
+  }
+
+  #copertina1, #copertina2, #copertina3 {
+    width: 28%;
+    height: auto;
+    margin: 0 1%;
+  }
+
+  #Gratis {
+    width: 90%;
+    flex-direction: column;
+    height: auto;
+    padding: 2vh 1vw;
+  }
+
+  #ggratis {
+    height: 10vh;
+  }
+
+  #testo {
+    margin-left: 0;
+    margin-top: 1vh;
+  }
+
+  #button1 {
+    width: 35%;
+    height: 6vh;
+    margin-left: 0;
+  }
+
+  .prom {
+    width: 90%;
+    margin-top: 3%;
+    margin-bottom: 3vh;
+  }
+
+  #corpo {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 3%;
+  }
+
+  .container {
+    gap: 15px;
+  }
+
+  .game-card, .game-card2 {
+    width: 90% !important;
+    margin-left: 0;
+  }
+
+  .box {
+    height: 25vh;
+  }
+
+  .box2 {
+    height: 18vh;
+    width: 14vh;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    flex: 1 1 100%;
+    margin: 1% 0;
+  }
+}
+
+#risultati-ricerca {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;           /* più stretto */
+  margin: 40px 0 0 4%;  /* margine solo a sinistra */
+  align-items: flex-start; /* allinea i figli a sinistra */
+}

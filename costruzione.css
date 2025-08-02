@@ -1,0 +1,42 @@
+body {
+    background: #181a1b;
+    color: #ffd700;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.costruzione-box {
+    background: #23272b;
+    display: inline-block;
+    padding: 40px 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px #000a;
+}
+
+.costruzione-box h1 {
+    font-size: 2.2rem;
+    margin-bottom: 18px;
+}
+
+.costruzione-box p {
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+}
+
+.btn-home {
+    background: #ffd700;
+    color: #23272b;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 22px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+    display: inline-block;
+}
+
+.btn-home:hover {
+    background: #e6c200;
+}
